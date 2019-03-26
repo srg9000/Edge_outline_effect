@@ -36,7 +36,7 @@ def func(inputf, output, threshold1, threshold2, fr,kernel_size,blur, color_hard
             frame2 = cv2.dilate(frame, kernel, 1)
             #print(frame2)
 #            frame2 = 
-            frame2 = (frame2*(1/255)) #*color_soft
+            #frame2 = (frame2*(1/255)) #*color_soft
             
             frame2 = cv2.blur(frame2, (blur,blur))
             
